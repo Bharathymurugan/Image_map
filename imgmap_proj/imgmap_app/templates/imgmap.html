@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGE MAPPING</title>
+</head>
+<body>
+    {%load static%}
+    <h1 style="font-family: algerian;color: brown;text-align: center;">MAP</h1>
+    <center><img src="{% static 'Map.png' %}" usemap="#myplace"></center>
+    <map name="myplace">
+        <area shape="rect" coords="700,400,759,449" href="{% url 'highway' %}" title="NH32">
+        <area shape="rect" coords="946,250,983,269" href="{% url 'highway' %}" title="NH32">
+        <area shape="rect" coords="1100,50,1165,119" href="{% url 'highway' %}" title="NH32">
+        <area shape="rect" coords="500,600,536,664" href="{% url 'highway' %}" title="NH32">
+        <area shape="rect" coords="1060,600,1140,620" href="{% url 'icecream' %}" title="Arun icecreams">
+        <area shape="rect" coords="1250,300,1303,351" href="{% url 'dominos' %}" title="Domino's">
+        <area shape="rect" coords="1214,141,1314,144" href="{% url 'saravana' %}" title="Saravana stores">
+        <area shape="rect" coords="938,210,996,220" href="{% url 'apple' %}" title="Apple stores">
+        
+    </map>
+</body>
+</html>
